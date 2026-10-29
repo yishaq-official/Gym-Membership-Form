@@ -31,7 +31,7 @@
             panel1 = new Panel();
             btnLogin = new Button();
             txtPassword = new TextBox();
-            textBox1 = new TextBox();
+            txtUser = new TextBox();
             label3 = new Label();
             txtUsername = new Label();
             label1 = new Label();
@@ -43,7 +43,7 @@
             panel1.BackColor = SystemColors.ActiveCaption;
             panel1.Controls.Add(btnLogin);
             panel1.Controls.Add(txtPassword);
-            panel1.Controls.Add(textBox1);
+            panel1.Controls.Add(txtUser);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(txtUsername);
             panel1.Controls.Add(label1);
@@ -70,12 +70,12 @@
             txtPassword.Size = new Size(192, 23);
             txtPassword.TabIndex = 4;
             // 
-            // textBox1
+            // txtUser
             // 
-            textBox1.Location = new Point(150, 100);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(192, 23);
-            textBox1.TabIndex = 3;
+            txtUser.Location = new Point(150, 100);
+            txtUser.Name = "txtUser";
+            txtUser.Size = new Size(192, 23);
+            txtUser.TabIndex = 3;
             // 
             // label3
             // 
@@ -124,7 +124,7 @@
         private Panel panel1;
         private Label label1;
         private TextBox txtPassword;
-        private TextBox textBox1;
+        private TextBox txtUser;
         private Label label3;
         private Label txtUsername;
         private Button btnLogin;

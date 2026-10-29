@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using GymMembership.Forms;
 
 namespace GymMembership
 {
@@ -17,7 +18,7 @@ namespace GymMembership
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string username = txtUsername.Text.Trim();
+            string username = txtUser.Text.Trim();
             string password = txtPassword.Text.Trim();
 
             if (username == "admin" && password == "admin123")
@@ -26,8 +27,8 @@ namespace GymMembership
                 MessageBox.Show("Login Successful!", "Welcome", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 // Open the Main form
-                //Main mainWindow = new Main();
-                //mainWindow.Show();
+                MainForm mainWindow = new MainForm();
+                mainWindow.Show();
 
                 // Hide the Login form (using Hide instead of Close keeps the application running)
                 this.Hide();

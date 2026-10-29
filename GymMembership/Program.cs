@@ -1,4 +1,6 @@
-using GymMembership.Forms;
+using System;
+using System.Windows.Forms;
+using GymMembership;
 
 namespace GymMembership
 {
