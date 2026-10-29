@@ -14,5 +14,16 @@ namespace GymMembership
         {
             InitializeComponent();
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            var username = txtUsername.Text.Trim();
+            var password = txtPassword.Text;
+
+            if(username == "admin" && password == "admin123")
+            {
+                MessageBox.Show("Login Successful!");
+            }
+        }
     }
 }
