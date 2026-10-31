@@ -14,5 +14,26 @@ namespace GymMembership.Forms
         {
             InitializeComponent();
         }
+        private void LoadForm(Form childForm)
+        {
+            
+            if (this.panelContent.Controls.Count > 0)
+            {
+                this.panelContent.Controls[0].Dispose();
+            }
+
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+
+            this.panelContent.Controls.Add(childForm);
+            this.panelContent.Tag = childForm;
+            childForm.Show();
+        }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

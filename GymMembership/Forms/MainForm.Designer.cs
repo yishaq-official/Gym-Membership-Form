@@ -42,11 +42,9 @@ namespace GymMembership.Forms
             btnMembers = new Button();
             btnDashboard = new Button();
             panelContent = new Panel();
-            lblContentPlaceholder = new Label();
             panelHeader.SuspendLayout();
             panelFooter.SuspendLayout();
             panelSidebar.SuspendLayout();
-            panelContent.SuspendLayout();
             SuspendLayout();
             // 
             // panelHeader
@@ -82,7 +80,7 @@ namespace GymMembership.Forms
             lblHeaderSubtitle.ForeColor = Color.FromArgb(148, 163, 184);
             lblHeaderSubtitle.Location = new Point(22, 42);
             lblHeaderSubtitle.Name = "lblHeaderSubtitle";
-            lblHeaderSubtitle.Size = new Size(204, 15);
+            lblHeaderSubtitle.Size = new Size(212, 15);
             lblHeaderSubtitle.TabIndex = 1;
             lblHeaderSubtitle.Text = "GYM MEMBERSHIP ADMIN INTERFACE";
             // 
@@ -93,9 +91,9 @@ namespace GymMembership.Forms
             lblHeaderTitle.ForeColor = Color.White;
             lblHeaderTitle.Location = new Point(20, 16);
             lblHeaderTitle.Name = "lblHeaderTitle";
-            lblHeaderTitle.Size = new Size(149, 25);
+            lblHeaderTitle.Size = new Size(80, 25);
             lblHeaderTitle.TabIndex = 0;
-            lblHeaderTitle.Text = "⚡ FITNESS PRO";
+            lblHeaderTitle.Text = "Group 8";
             // 
             // panelFooter
             // 
@@ -116,7 +114,7 @@ namespace GymMembership.Forms
             lblFooterVersion.ForeColor = Color.FromArgb(148, 163, 184);
             lblFooterVersion.Location = new Point(1020, 10);
             lblFooterVersion.Name = "lblFooterVersion";
-            lblFooterVersion.Size = new Size(49, 15);
+            lblFooterVersion.Size = new Size(46, 15);
             lblFooterVersion.TabIndex = 1;
             lblFooterVersion.Text = "v1.0.0.0";
             // 
@@ -127,9 +125,9 @@ namespace GymMembership.Forms
             lblFooterStatus.ForeColor = Color.FromArgb(71, 85, 105);
             lblFooterStatus.Location = new Point(20, 10);
             lblFooterStatus.Name = "lblFooterStatus";
-            lblFooterStatus.Size = new Size(130, 15);
+            lblFooterStatus.Size = new Size(133, 15);
             lblFooterStatus.TabIndex = 0;
-            lblFooterStatus.Text = "🟢 System Status: Ready";
+            lblFooterStatus.Text = "\U0001f7e2 System Status: Ready";
             // 
             // panelSidebar
             // 
@@ -229,28 +227,16 @@ namespace GymMembership.Forms
             btnDashboard.Text = "📊   Dashboard";
             btnDashboard.TextAlign = ContentAlignment.MiddleLeft;
             btnDashboard.UseVisualStyleBackColor = true;
+            btnDashboard.Click += btnDashboard_Click;
             // 
             // panelContent
             // 
             panelContent.BackColor = Color.FromArgb(248, 250, 252);
-            panelContent.Controls.Add(lblContentPlaceholder);
             panelContent.Dock = DockStyle.Fill;
             panelContent.Location = new Point(220, 70);
             panelContent.Name = "panelContent";
             panelContent.Size = new Size(880, 576);
             panelContent.TabIndex = 3;
-            // 
-            // lblContentPlaceholder
-            // 
-            lblContentPlaceholder.Anchor = AnchorStyles.None;
-            lblContentPlaceholder.AutoSize = true;
-            lblContentPlaceholder.Font = new Font("Segoe UI", 12F);
-            lblContentPlaceholder.ForeColor = Color.FromArgb(148, 163, 184);
-            lblContentPlaceholder.Location = new Point(290, 270);
-            lblContentPlaceholder.Name = "lblContentPlaceholder";
-            lblContentPlaceholder.Size = new Size(295, 21);
-            lblContentPlaceholder.TabIndex = 0;
-            lblContentPlaceholder.Text = "Main Content Area (Child Forms Display)";
             // 
             // MainForm
             // 
@@ -271,8 +257,6 @@ namespace GymMembership.Forms
             panelFooter.ResumeLayout(false);
             panelFooter.PerformLayout();
             panelSidebar.ResumeLayout(false);
-            panelContent.ResumeLayout(false);
-            panelContent.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -292,6 +276,5 @@ namespace GymMembership.Forms
         private Button btnProfile;
         private Button btnLogout;
         private Panel panelContent;
-        private Label lblContentPlaceholder;
     }
 }
