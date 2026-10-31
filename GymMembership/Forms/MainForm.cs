@@ -33,7 +33,8 @@ namespace GymMembership.Forms
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-
+            DashboardForm dashForm = new DashboardForm();
+            LoadForm(dashForm);
         }
     }
 }
