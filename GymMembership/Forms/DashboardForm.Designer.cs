@@ -28,12 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "DashboardForm";
+            button1 = new Button();
+            SuspendLayout();
+            // 
+            // button1
+            // 
+            button1.Location = new Point(260, 122);
+            button1.Name = "button1";
+            button1.Size = new Size(226, 166);
+            button1.TabIndex = 0;
+            button1.Text = "Dashboard";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // DashboardForm
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(button1);
+            Name = "DashboardForm";
+            Text = "DashboardForm";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button button1;
     }
 }
