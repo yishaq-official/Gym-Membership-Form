@@ -16,7 +16,7 @@ namespace GymMembership.Forms
         }
         private void LoadForm(Form childForm)
         {
-            
+
             if (this.panelContent.Controls.Count > 0)
             {
                 this.panelContent.Controls[0].Dispose();
@@ -35,6 +35,13 @@ namespace GymMembership.Forms
         {
             DashboardForm dashForm = new DashboardForm();
             LoadForm(dashForm);
+        }
+
+        private void btnProfile_Click(object sender, EventArgs e)
+        {
+            // Loads ProfileForm
+            ProfileForm profileForm = new ProfileForm();
+            LoadForm(profileForm);
         }
     }
 }

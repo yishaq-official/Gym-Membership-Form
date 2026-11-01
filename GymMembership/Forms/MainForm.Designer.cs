@@ -176,6 +176,7 @@ namespace GymMembership.Forms
             btnProfile.Text = "👤   Profile";
             btnProfile.TextAlign = ContentAlignment.MiddleLeft;
             btnProfile.UseVisualStyleBackColor = true;
+            btnProfile.Click += btnProfile_Click;
             // 
             // btnRegistration
             // 
