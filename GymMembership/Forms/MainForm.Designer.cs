@@ -212,6 +212,7 @@ namespace GymMembership.Forms
             btnMembers.Text = "👥   Members";
             btnMembers.TextAlign = ContentAlignment.MiddleLeft;
             btnMembers.UseVisualStyleBackColor = true;
+            btnMembers.Click += btnMembers_Click_1;
             // 
             // btnDashboard
             // 

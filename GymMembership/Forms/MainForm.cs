@@ -55,5 +55,11 @@ namespace GymMembership.Forms
             RegisterForm RegisterForm = new RegisterForm();
             LoadForm(RegisterForm);
         }
+
+        private void btnMembers_Click_1(object sender, EventArgs e)
+        {
+            MembershipForm MemberForm = new MembershipForm();
+            LoadForm(MemberForm);
+        }
     }
 }
