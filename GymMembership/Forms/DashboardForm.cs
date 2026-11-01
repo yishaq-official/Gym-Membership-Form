@@ -14,5 +14,10 @@ namespace GymMembership.Forms
         {
             InitializeComponent();
         }
+
+        private void btnQuickRegister_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

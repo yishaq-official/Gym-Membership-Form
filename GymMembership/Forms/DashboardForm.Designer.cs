@@ -63,7 +63,6 @@ namespace GymMembership.Forms
             lblTrainers = new Label();
             lblCapacity = new Label();
             lblStatusCardTitle = new Label();
-            btnQuickReport = new Button();
             btnQuickMembers = new Button();
             btnQuickRenew = new Button();
             btnQuickRegister = new Button();
@@ -96,7 +95,7 @@ namespace GymMembership.Forms
             lblDashSubtitle.ForeColor = Color.FromArgb(100, 116, 139);
             lblDashSubtitle.Location = new Point(3, 30);
             lblDashSubtitle.Name = "lblDashSubtitle";
-            lblDashSubtitle.Size = new Size(357, 15);
+            lblDashSubtitle.Size = new Size(387, 15);
             lblDashSubtitle.TabIndex = 1;
             lblDashSubtitle.Text = "Welcome back! Here is your gym's daily overview and activity summary.";
             // 
@@ -107,7 +106,7 @@ namespace GymMembership.Forms
             lblDashTitle.ForeColor = Color.FromArgb(30, 41, 59);
             lblDashTitle.Location = new Point(0, 0);
             lblDashTitle.Name = "lblDashTitle";
-            lblDashTitle.Size = new Size(211, 30);
+            lblDashTitle.Size = new Size(217, 30);
             lblDashTitle.TabIndex = 0;
             lblDashTitle.Text = "Dashboard Overview";
             // 
@@ -130,7 +129,7 @@ namespace GymMembership.Forms
             lblTotalSub.ForeColor = Color.FromArgb(16, 185, 129);
             lblTotalSub.Location = new Point(14, 73);
             lblTotalSub.Name = "lblTotalSub";
-            lblTotalSub.Size = new Size(111, 13);
+            lblTotalSub.Size = new Size(115, 13);
             lblTotalSub.TabIndex = 2;
             lblTotalSub.Text = "▲ +12% from last mo";
             // 
@@ -152,7 +151,7 @@ namespace GymMembership.Forms
             lblTotalTitle.ForeColor = Color.FromArgb(100, 116, 139);
             lblTotalTitle.Location = new Point(14, 12);
             lblTotalTitle.Name = "lblTotalTitle";
-            lblTotalTitle.Size = new Size(103, 15);
+            lblTotalTitle.Size = new Size(102, 15);
             lblTotalTitle.TabIndex = 0;
             lblTotalTitle.Text = "👥 Total Members";
             // 
@@ -197,7 +196,7 @@ namespace GymMembership.Forms
             lblActiveTitle.ForeColor = Color.FromArgb(100, 116, 139);
             lblActiveTitle.Location = new Point(14, 12);
             lblActiveTitle.Name = "lblActiveTitle";
-            lblActiveTitle.Size = new Size(110, 15);
+            lblActiveTitle.Size = new Size(109, 15);
             lblActiveTitle.TabIndex = 0;
             lblActiveTitle.Text = "💳 Active Members";
             // 
@@ -220,7 +219,7 @@ namespace GymMembership.Forms
             lblVisitsSub.ForeColor = Color.FromArgb(100, 116, 139);
             lblVisitsSub.Location = new Point(14, 73);
             lblVisitsSub.Name = "lblVisitsSub";
-            lblVisitsSub.Size = new Size(116, 13);
+            lblVisitsSub.Size = new Size(127, 13);
             lblVisitsSub.TabIndex = 2;
             lblVisitsSub.Text = "Peak: 5:00 PM - 8:00 PM";
             // 
@@ -231,7 +230,7 @@ namespace GymMembership.Forms
             lblVisitsValue.ForeColor = Color.FromArgb(234, 88, 12);
             lblVisitsValue.Location = new Point(10, 35);
             lblVisitsValue.Name = "lblVisitsValue";
-            lblVisitsValue.Size = new Size(55, 32);
+            lblVisitsValue.Size = new Size(56, 32);
             lblVisitsValue.TabIndex = 1;
             lblVisitsValue.Text = "162";
             // 
@@ -242,7 +241,7 @@ namespace GymMembership.Forms
             lblVisitsTitle.ForeColor = Color.FromArgb(100, 116, 139);
             lblVisitsTitle.Location = new Point(14, 12);
             lblVisitsTitle.Name = "lblVisitsTitle";
-            lblVisitsTitle.Size = new Size(100, 15);
+            lblVisitsTitle.Size = new Size(94, 15);
             lblVisitsTitle.TabIndex = 0;
             lblVisitsTitle.Text = "🏋️ Today's Visits";
             // 
@@ -265,7 +264,7 @@ namespace GymMembership.Forms
             lblRevenueSub.ForeColor = Color.FromArgb(16, 185, 129);
             lblRevenueSub.Location = new Point(14, 73);
             lblRevenueSub.Name = "lblRevenueSub";
-            lblRevenueSub.Size = new Size(115, 13);
+            lblRevenueSub.Size = new Size(107, 13);
             lblRevenueSub.TabIndex = 2;
             lblRevenueSub.Text = "▲ +8.5% target met";
             // 
@@ -276,7 +275,7 @@ namespace GymMembership.Forms
             lblRevenueValue.ForeColor = Color.FromArgb(16, 185, 129);
             lblRevenueValue.Location = new Point(10, 35);
             lblRevenueValue.Name = "lblRevenueValue";
-            lblRevenueValue.Size = new Size(107, 32);
+            lblRevenueValue.Size = new Size(105, 32);
             lblRevenueValue.TabIndex = 1;
             lblRevenueValue.Text = "$18,450";
             // 
@@ -287,7 +286,7 @@ namespace GymMembership.Forms
             lblRevenueTitle.ForeColor = Color.FromArgb(100, 116, 139);
             lblRevenueTitle.Location = new Point(14, 12);
             lblRevenueTitle.Name = "lblRevenueTitle";
-            lblRevenueTitle.Size = new Size(119, 15);
+            lblRevenueTitle.Size = new Size(114, 15);
             lblRevenueTitle.TabIndex = 0;
             lblRevenueTitle.Text = "💰 Monthly Revenue";
             // 
@@ -383,7 +382,7 @@ namespace GymMembership.Forms
             lblRecentTitle.ForeColor = Color.FromArgb(30, 41, 59);
             lblRecentTitle.Location = new Point(15, 15);
             lblRecentTitle.Name = "lblRecentTitle";
-            lblRecentTitle.Size = new Size(187, 20);
+            lblRecentTitle.Size = new Size(194, 20);
             lblRecentTitle.TabIndex = 0;
             lblRecentTitle.Text = "📋 Recent Member Activity";
             // 
@@ -392,7 +391,6 @@ namespace GymMembership.Forms
             panelQuickActions.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             panelQuickActions.BackColor = Color.White;
             panelQuickActions.Controls.Add(panelGymStatus);
-            panelQuickActions.Controls.Add(btnQuickReport);
             panelQuickActions.Controls.Add(btnQuickMembers);
             panelQuickActions.Controls.Add(btnQuickRenew);
             panelQuickActions.Controls.Add(btnQuickRegister);
@@ -424,7 +422,7 @@ namespace GymMembership.Forms
             lblLockers.ForeColor = Color.FromArgb(71, 85, 105);
             lblLockers.Location = new Point(10, 95);
             lblLockers.Name = "lblLockers";
-            lblLockers.Size = new Size(130, 13);
+            lblLockers.Size = new Size(127, 13);
             lblLockers.TabIndex = 3;
             lblLockers.Text = "🔐 Lockers: 42 Available";
             // 
@@ -435,7 +433,7 @@ namespace GymMembership.Forms
             lblTrainers.ForeColor = Color.FromArgb(71, 85, 105);
             lblTrainers.Location = new Point(10, 68);
             lblTrainers.Name = "lblTrainers";
-            lblTrainers.Size = new Size(125, 13);
+            lblTrainers.Size = new Size(120, 13);
             lblTrainers.TabIndex = 2;
             lblTrainers.Text = "🏋️ Trainers On Duty: 4";
             // 
@@ -446,7 +444,7 @@ namespace GymMembership.Forms
             lblCapacity.ForeColor = Color.FromArgb(71, 85, 105);
             lblCapacity.Location = new Point(10, 40);
             lblCapacity.Name = "lblCapacity";
-            lblCapacity.Size = new Size(141, 13);
+            lblCapacity.Size = new Size(139, 13);
             lblCapacity.TabIndex = 1;
             lblCapacity.Text = "👥 Gym Capacity: 65% Full";
             // 
@@ -457,26 +455,9 @@ namespace GymMembership.Forms
             lblStatusCardTitle.ForeColor = Color.FromArgb(30, 41, 59);
             lblStatusCardTitle.Location = new Point(10, 12);
             lblStatusCardTitle.Name = "lblStatusCardTitle";
-            lblStatusCardTitle.Size = new Size(106, 15);
+            lblStatusCardTitle.Size = new Size(104, 15);
             lblStatusCardTitle.TabIndex = 0;
             lblStatusCardTitle.Text = "Facility Live Status";
-            // 
-            // btnQuickReport
-            // 
-            btnQuickReport.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            btnQuickReport.BackColor = Color.FromArgb(241, 245, 249);
-            btnQuickReport.Cursor = Cursors.Hand;
-            btnQuickReport.FlatAppearance.BorderSize = 0;
-            btnQuickReport.FlatStyle = FlatStyle.Flat;
-            btnQuickReport.Font = new Font("Segoe UI", 9F);
-            btnQuickReport.ForeColor = Color.FromArgb(51, 65, 85);
-            btnQuickReport.Location = new Point(15, 168);
-            btnQuickReport.Name = "btnQuickReport";
-            btnQuickReport.Size = new Size(205, 34);
-            btnQuickReport.TabIndex = 4;
-            btnQuickReport.Text = "📊  Daily Attendance Report";
-            btnQuickReport.TextAlign = ContentAlignment.MiddleLeft;
-            btnQuickReport.UseVisualStyleBackColor = false;
             // 
             // btnQuickMembers
             // 
@@ -528,6 +509,7 @@ namespace GymMembership.Forms
             btnQuickRegister.Text = "+  Register New Member";
             btnQuickRegister.TextAlign = ContentAlignment.MiddleLeft;
             btnQuickRegister.UseVisualStyleBackColor = false;
+            btnQuickRegister.Click += btnQuickRegister_Click;
             // 
             // lblQuickActionsTitle
             // 
@@ -536,7 +518,7 @@ namespace GymMembership.Forms
             lblQuickActionsTitle.ForeColor = Color.FromArgb(30, 41, 59);
             lblQuickActionsTitle.Location = new Point(15, 15);
             lblQuickActionsTitle.Name = "lblQuickActionsTitle";
-            lblQuickActionsTitle.Size = new Size(125, 20);
+            lblQuickActionsTitle.Size = new Size(127, 20);
             lblQuickActionsTitle.TabIndex = 0;
             lblQuickActionsTitle.Text = "⚡ Quick Actions";
             // 
@@ -610,7 +592,6 @@ namespace GymMembership.Forms
         private Button btnQuickRegister;
         private Button btnQuickRenew;
         private Button btnQuickMembers;
-        private Button btnQuickReport;
         private Panel panelGymStatus;
         private Label lblStatusCardTitle;
         private Label lblCapacity;
