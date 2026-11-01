@@ -43,5 +43,10 @@ namespace GymMembership
                 txtUsername.Focus();
             }
         }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

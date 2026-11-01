@@ -109,11 +109,12 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ActiveBorder;
+            BackColor = Color.FromArgb(30, 37, 54);
             ClientSize = new Size(800, 450);
             Controls.Add(panel1);
             Name = "LoginForm";
             Text = "LoginForm";
+            Load += LoginForm_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);
