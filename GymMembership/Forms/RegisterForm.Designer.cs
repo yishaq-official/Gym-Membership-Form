@@ -93,7 +93,7 @@ namespace GymMembership.Forms
             lblSubtitle.ForeColor = Color.FromArgb(100, 116, 139);
             lblSubtitle.Location = new Point(3, 30);
             lblSubtitle.Name = "lblSubtitle";
-            lblSubtitle.Size = new Size(393, 15);
+            lblSubtitle.Size = new Size(395, 15);
             lblSubtitle.TabIndex = 1;
             lblSubtitle.Text = "Register a new gym member and choose their workout category package.";
             // 
@@ -104,7 +104,7 @@ namespace GymMembership.Forms
             lblTitle.ForeColor = Color.FromArgb(30, 41, 59);
             lblTitle.Location = new Point(0, 0);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(267, 30);
+            lblTitle.Size = new Size(271, 30);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "New Member Registration";
             // 
@@ -146,7 +146,7 @@ namespace GymMembership.Forms
             lblAddress.ForeColor = Color.FromArgb(71, 85, 105);
             lblAddress.Location = new Point(20, 375);
             lblAddress.Name = "lblAddress";
-            lblAddress.Size = new Size(130, 15);
+            lblAddress.Size = new Size(147, 15);
             lblAddress.TabIndex = 11;
             lblAddress.Text = "Address / Residence (Opt):";
             // 
@@ -166,7 +166,7 @@ namespace GymMembership.Forms
             lblStartDate.ForeColor = Color.FromArgb(71, 85, 105);
             lblStartDate.Location = new Point(210, 305);
             lblStartDate.Name = "lblStartDate";
-            lblStartDate.Size = new Size(61, 15);
+            lblStartDate.Size = new Size(63, 15);
             lblStartDate.TabIndex = 9;
             lblStartDate.Text = "Start Date:";
             // 
@@ -178,7 +178,7 @@ namespace GymMembership.Forms
             cmbGender.Items.AddRange(new object[] { "Male", "Female" });
             cmbGender.Location = new Point(20, 325);
             cmbGender.Name = "cmbGender";
-            cmbGender.Size = new Size(170, 24);
+            cmbGender.Size = new Size(170, 25);
             cmbGender.TabIndex = 8;
             // 
             // lblGender
@@ -188,7 +188,7 @@ namespace GymMembership.Forms
             lblGender.ForeColor = Color.FromArgb(71, 85, 105);
             lblGender.Location = new Point(20, 305);
             lblGender.Name = "lblGender";
-            lblGender.Size = new Size(49, 15);
+            lblGender.Size = new Size(48, 15);
             lblGender.TabIndex = 7;
             lblGender.Text = "Gender:";
             // 
@@ -208,7 +208,7 @@ namespace GymMembership.Forms
             lblEmail.ForeColor = Color.FromArgb(71, 85, 105);
             lblEmail.Location = new Point(20, 235);
             lblEmail.Name = "lblEmail";
-            lblEmail.Size = new Size(116, 15);
+            lblEmail.Size = new Size(115, 15);
             lblEmail.TabIndex = 5;
             lblEmail.Text = "Email Address (Opt):";
             // 
@@ -228,7 +228,7 @@ namespace GymMembership.Forms
             lblPhone.ForeColor = Color.FromArgb(71, 85, 105);
             lblPhone.Location = new Point(20, 165);
             lblPhone.Name = "lblPhone";
-            lblPhone.Size = new Size(95, 15);
+            lblPhone.Size = new Size(96, 15);
             lblPhone.TabIndex = 3;
             lblPhone.Text = "Phone Numbers:";
             // 
@@ -259,7 +259,7 @@ namespace GymMembership.Forms
             lblCard1Title.ForeColor = Color.FromArgb(30, 41, 59);
             lblCard1Title.Location = new Point(16, 15);
             lblCard1Title.Name = "lblCard1Title";
-            lblCard1Title.Size = new Size(160, 20);
+            lblCard1Title.Size = new Size(139, 20);
             lblCard1Title.TabIndex = 0;
             lblCard1Title.Text = "👤 Member Details";
             // 
@@ -311,7 +311,7 @@ namespace GymMembership.Forms
             btnRegister.Name = "btnRegister";
             btnRegister.Size = new Size(250, 38);
             btnRegister.TabIndex = 7;
-            btnRegister.Text = "✓ Register & Activate Member";
+            btnRegister.Text = "✓ Register / Activate Member";
             btnRegister.UseVisualStyleBackColor = false;
             // 
             // panelFeeSummary
@@ -335,7 +335,7 @@ namespace GymMembership.Forms
             lblCurrencyNote.ForeColor = Color.FromArgb(21, 128, 61);
             lblCurrencyNote.Location = new Point(205, 38);
             lblCurrencyNote.Name = "lblCurrencyNote";
-            lblCurrencyNote.Size = new Size(153, 13);
+            lblCurrencyNote.Size = new Size(155, 13);
             lblCurrencyNote.TabIndex = 2;
             lblCurrencyNote.Text = "Currency: Ethiopian Birr (ETB)";
             // 
@@ -347,7 +347,7 @@ namespace GymMembership.Forms
             lblFeeValue.ForeColor = Color.FromArgb(22, 101, 52);
             lblFeeValue.Location = new Point(255, 6);
             lblFeeValue.Name = "lblFeeValue";
-            lblFeeValue.Size = new Size(103, 30);
+            lblFeeValue.Size = new Size(97, 30);
             lblFeeValue.TabIndex = 1;
             lblFeeValue.Text = "500 ETB";
             // 
@@ -358,7 +358,7 @@ namespace GymMembership.Forms
             lblFeeTitle.ForeColor = Color.FromArgb(22, 101, 52);
             lblFeeTitle.Location = new Point(12, 16);
             lblFeeTitle.Name = "lblFeeTitle";
-            lblFeeTitle.Size = new Size(155, 17);
+            lblFeeTitle.Size = new Size(167, 17);
             lblFeeTitle.TabIndex = 0;
             lblFeeTitle.Text = "Monthly Membership Fee:";
             // 
@@ -385,7 +385,7 @@ namespace GymMembership.Forms
             lblDumbbellPrice.Location = new Point(285, 18);
             lblDumbbellPrice.Name = "lblDumbbellPrice";
             lblDumbbellPrice.Padding = new Padding(6, 2, 6, 2);
-            lblDumbbellPrice.Size = new Size(72, 21);
+            lblDumbbellPrice.Size = new Size(68, 21);
             lblDumbbellPrice.TabIndex = 2;
             lblDumbbellPrice.Text = "400 ETB";
             // 
@@ -396,7 +396,7 @@ namespace GymMembership.Forms
             lblDumbbellDesc.ForeColor = Color.FromArgb(100, 116, 139);
             lblDumbbellDesc.Location = new Point(10, 34);
             lblDumbbellDesc.Name = "lblDumbbellDesc";
-            lblDumbbellDesc.Size = new Size(205, 13);
+            lblDumbbellDesc.Size = new Size(212, 13);
             lblDumbbellDesc.TabIndex = 1;
             lblDumbbellDesc.Text = "Free weights, dumbbells, barbells & racks";
             // 
@@ -407,7 +407,7 @@ namespace GymMembership.Forms
             lblDumbbellTitle.ForeColor = Color.FromArgb(30, 41, 59);
             lblDumbbellTitle.Location = new Point(10, 12);
             lblDumbbellTitle.Name = "lblDumbbellTitle";
-            lblDumbbellTitle.Size = new Size(88, 17);
+            lblDumbbellTitle.Size = new Size(89, 17);
             lblDumbbellTitle.TabIndex = 0;
             lblDumbbellTitle.Text = "💪 Dumbbell";
             // 
@@ -434,7 +434,7 @@ namespace GymMembership.Forms
             lblMachinePrice.Location = new Point(285, 18);
             lblMachinePrice.Name = "lblMachinePrice";
             lblMachinePrice.Padding = new Padding(6, 2, 6, 2);
-            lblMachinePrice.Size = new Size(72, 21);
+            lblMachinePrice.Size = new Size(68, 21);
             lblMachinePrice.TabIndex = 2;
             lblMachinePrice.Text = "500 ETB";
             // 
@@ -445,7 +445,7 @@ namespace GymMembership.Forms
             lblMachineDesc.ForeColor = Color.FromArgb(100, 116, 139);
             lblMachineDesc.Location = new Point(10, 34);
             lblMachineDesc.Name = "lblMachineDesc";
-            lblMachineDesc.Size = new Size(211, 13);
+            lblMachineDesc.Size = new Size(204, 13);
             lblMachineDesc.TabIndex = 1;
             lblMachineDesc.Text = "Treadmills, cables & resistance machines";
             // 
@@ -456,7 +456,7 @@ namespace GymMembership.Forms
             lblMachineTitle.ForeColor = Color.FromArgb(30, 41, 59);
             lblMachineTitle.Location = new Point(10, 12);
             lblMachineTitle.Name = "lblMachineTitle";
-            lblMachineTitle.Size = new Size(79, 17);
+            lblMachineTitle.Size = new Size(81, 17);
             lblMachineTitle.TabIndex = 0;
             lblMachineTitle.Text = "🏋️ Machine";
             // 
@@ -483,7 +483,7 @@ namespace GymMembership.Forms
             lblAerobicsPrice.Location = new Point(285, 18);
             lblAerobicsPrice.Name = "lblAerobicsPrice";
             lblAerobicsPrice.Padding = new Padding(6, 2, 6, 2);
-            lblAerobicsPrice.Size = new Size(72, 21);
+            lblAerobicsPrice.Size = new Size(68, 21);
             lblAerobicsPrice.TabIndex = 2;
             lblAerobicsPrice.Text = "500 ETB";
             // 
@@ -494,7 +494,7 @@ namespace GymMembership.Forms
             lblAerobicsDesc.ForeColor = Color.FromArgb(100, 116, 139);
             lblAerobicsDesc.Location = new Point(10, 34);
             lblAerobicsDesc.Name = "lblAerobicsDesc";
-            lblAerobicsDesc.Size = new Size(217, 13);
+            lblAerobicsDesc.Size = new Size(241, 13);
             lblAerobicsDesc.TabIndex = 1;
             lblAerobicsDesc.Text = "Cardio sessions, floor exercises & step workout";
             // 
@@ -505,7 +505,7 @@ namespace GymMembership.Forms
             lblAerobicsTitle.ForeColor = Color.FromArgb(30, 41, 59);
             lblAerobicsTitle.Location = new Point(10, 12);
             lblAerobicsTitle.Name = "lblAerobicsTitle";
-            lblAerobicsTitle.Size = new Size(78, 17);
+            lblAerobicsTitle.Size = new Size(80, 17);
             lblAerobicsTitle.TabIndex = 0;
             lblAerobicsTitle.Text = "🏃 Aerobics";
             // 
@@ -518,7 +518,7 @@ namespace GymMembership.Forms
             cmbCategory.Items.AddRange(new object[] { "Aerobics — 500 ETB / month", "Machine — 500 ETB / month", "Dumbbell — 400 ETB / month" });
             cmbCategory.Location = new Point(20, 68);
             cmbCategory.Name = "cmbCategory";
-            cmbCategory.Size = new Size(370, 24);
+            cmbCategory.Size = new Size(370, 25);
             cmbCategory.TabIndex = 2;
             // 
             // lblSelectCategory
@@ -528,7 +528,7 @@ namespace GymMembership.Forms
             lblSelectCategory.ForeColor = Color.FromArgb(71, 85, 105);
             lblSelectCategory.Location = new Point(20, 48);
             lblSelectCategory.Name = "lblSelectCategory";
-            lblSelectCategory.Size = new Size(160, 15);
+            lblSelectCategory.Size = new Size(162, 15);
             lblSelectCategory.TabIndex = 1;
             lblSelectCategory.Text = "Select Membership Category:";
             // 
@@ -539,7 +539,7 @@ namespace GymMembership.Forms
             lblCard2Title.ForeColor = Color.FromArgb(30, 41, 59);
             lblCard2Title.Location = new Point(16, 15);
             lblCard2Title.Name = "lblCard2Title";
-            lblCard2Title.Size = new Size(183, 20);
+            lblCard2Title.Size = new Size(188, 20);
             lblCard2Title.TabIndex = 0;
             lblCard2Title.Text = "💳 Membership Category";
             // 
