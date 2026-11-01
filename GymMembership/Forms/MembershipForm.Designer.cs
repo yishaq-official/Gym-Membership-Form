@@ -107,7 +107,7 @@ namespace GymMembership.Forms
             lblExpiredCount.Name = "lblExpiredCount";
             lblExpiredCount.Size = new Size(37, 21);
             lblExpiredCount.TabIndex = 1;
-            lblExpiredCount.Text = "202";
+            lblExpiredCount.Text = "0";
             // 
             // lblExpiredTitle
             // 
@@ -140,7 +140,7 @@ namespace GymMembership.Forms
             lblActiveCount.Name = "lblActiveCount";
             lblActiveCount.Size = new Size(49, 21);
             lblActiveCount.TabIndex = 1;
-            lblActiveCount.Text = "1,048";
+            lblActiveCount.Text = "0";
             // 
             // lblActiveTitle
             // 
@@ -173,7 +173,7 @@ namespace GymMembership.Forms
             lblTotalCount.Name = "lblTotalCount";
             lblTotalCount.Size = new Size(49, 21);
             lblTotalCount.TabIndex = 1;
-            lblTotalCount.Text = "1,250";
+            lblTotalCount.Text = "0";
             // 
             // lblTotalTitle
             // 
@@ -238,17 +238,19 @@ namespace GymMembership.Forms
             btnNewMember.TabIndex = 5;
             btnNewMember.Text = "+ Add Member";
             btnNewMember.UseVisualStyleBackColor = false;
+            btnNewMember.Click += btnNewMember_Click;
             // 
             // cmbPlanFilter
             // 
             cmbPlanFilter.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbPlanFilter.Font = new Font("Segoe UI", 9F);
             cmbPlanFilter.FormattingEnabled = true;
-            cmbPlanFilter.Items.AddRange(new object[] { "All Plans", "Standard Gym", "Premium VIP", "Student Pass", "Cardio Only" });
+            cmbPlanFilter.Items.AddRange(new object[] { "All Categories", "Aerobics", "Machine", "Dumbbell" });
             cmbPlanFilter.Location = new Point(480, 16);
             cmbPlanFilter.Name = "cmbPlanFilter";
             cmbPlanFilter.Size = new Size(140, 23);
             cmbPlanFilter.TabIndex = 4;
+            cmbPlanFilter.SelectedIndexChanged += FilterChanged;
             // 
             // cmbStatusFilter
             // 
@@ -260,6 +262,7 @@ namespace GymMembership.Forms
             cmbStatusFilter.Name = "cmbStatusFilter";
             cmbStatusFilter.Size = new Size(135, 23);
             cmbStatusFilter.TabIndex = 3;
+            cmbStatusFilter.SelectedIndexChanged += FilterChanged;
             // 
             // btnSearch
             // 
@@ -275,6 +278,7 @@ namespace GymMembership.Forms
             btnSearch.TabIndex = 2;
             btnSearch.Text = "Search";
             btnSearch.UseVisualStyleBackColor = false;
+            btnSearch.Click += btnSearch_Click;
             // 
             // txtSearch
             // 
@@ -284,6 +288,7 @@ namespace GymMembership.Forms
             txtSearch.PlaceholderText = "Name, ID, phone...";
             txtSearch.Size = new Size(170, 23);
             txtSearch.TabIndex = 1;
+            txtSearch.TextChanged += txtSearch_TextChanged;
             // 
             // lblSearch
             // 
@@ -394,15 +399,6 @@ namespace GymMembership.Forms
             colStatus.Name = "colStatus";
             colStatus.ReadOnly = true;
             // 
-            // Sample rows for preview
-            // 
-            dgvMembers.Rows.Add("MEM-101", "Marcus Vance", "+1 (555) 234-5678", "Premium VIP (Annual)", "15 Jan 2026", "15 Jan 2027", "Active");
-            dgvMembers.Rows.Add("MEM-102", "Elena Rostova", "+1 (555) 345-6789", "Standard Monthly", "01 Oct 2026", "01 Nov 2026", "Active");
-            dgvMembers.Rows.Add("MEM-103", "David Kim", "+1 (555) 456-7890", "Cardio Only (Quarterly)", "10 Jul 2026", "10 Oct 2026", "Expired");
-            dgvMembers.Rows.Add("MEM-104", "Sophia Ramirez", "+1 (555) 567-8901", "Student Pass (Monthly)", "15 Sep 2026", "15 Oct 2026", "Expired");
-            dgvMembers.Rows.Add("MEM-105", "Alexander Wright", "+1 (555) 678-9012", "Premium VIP (Annual)", "20 Feb 2026", "20 Feb 2027", "Active");
-            dgvMembers.Rows.Add("MEM-106", "Chloe Anderson", "+1 (555) 789-0123", "Standard Monthly", "28 Oct 2026", "28 Nov 2026", "Active");
-            // 
             // panelBottom
             // 
             panelBottom.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
@@ -459,6 +455,7 @@ namespace GymMembership.Forms
             btnDelete.TabIndex = 2;
             btnDelete.Text = "🗑 Delete";
             btnDelete.UseVisualStyleBackColor = false;
+            btnDelete.Click += btnDelete_Click;
             // 
             // btnEdit
             // 
@@ -491,6 +488,7 @@ namespace GymMembership.Forms
             btnRenew.TabIndex = 0;
             btnRenew.Text = "💳 Renew Plan";
             btnRenew.UseVisualStyleBackColor = false;
+            btnRenew.Click += btnRenew_Click;
             // 
             // MembershipForm
             // 
@@ -505,6 +503,7 @@ namespace GymMembership.Forms
             FormBorderStyle = FormBorderStyle.None;
             Name = "MembershipForm";
             Text = "Members Management";
+            Load += MembershipForm_Load;
             panelHeader.ResumeLayout(false);
             panelHeader.PerformLayout();
             cardExpired.ResumeLayout(false);
@@ -560,4 +559,3 @@ namespace GymMembership.Forms
         private Button btnExport;
     }
 }
-
