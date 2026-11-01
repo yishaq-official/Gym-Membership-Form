@@ -49,5 +49,11 @@ namespace GymMembership.Forms
             ProfileForm profileForm = new ProfileForm();
             LoadForm(profileForm);
         }
+        private void btnRegistration_Click(object sender, EventArgs e)
+        {
+            // Loads ProfileForm
+            RegisterForm RegisterForm = new RegisterForm();
+            LoadForm(RegisterForm);
+        }
     }
 }

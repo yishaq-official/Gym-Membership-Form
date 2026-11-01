@@ -194,6 +194,7 @@ namespace GymMembership.Forms
             btnRegistration.Text = "📝   Registration";
             btnRegistration.TextAlign = ContentAlignment.MiddleLeft;
             btnRegistration.UseVisualStyleBackColor = true;
+            btnRegistration.Click += btnRegistration_Click;
             // 
             // btnMembers
             // 
