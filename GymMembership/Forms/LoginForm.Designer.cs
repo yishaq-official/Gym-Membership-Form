@@ -35,6 +35,7 @@
             label3 = new Label();
             txtUsername = new Label();
             label1 = new Label();
+            label2 = new Label();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -47,7 +48,7 @@
             panel1.Controls.Add(label3);
             panel1.Controls.Add(txtUsername);
             panel1.Controls.Add(label1);
-            panel1.Location = new Point(207, 72);
+            panel1.Location = new Point(207, 101);
             panel1.Name = "panel1";
             panel1.Size = new Size(399, 312);
             panel1.TabIndex = 0;
@@ -105,12 +106,24 @@
             label1.TabIndex = 0;
             label1.Text = "Sign In";
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Stencil", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.ForeColor = SystemColors.ActiveCaption;
+            label2.Location = new Point(227, 52);
+            label2.Name = "label2";
+            label2.Size = new Size(355, 32);
+            label2.TabIndex = 1;
+            label2.Text = "Gym Membership System";
+            // 
             // LoginForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(30, 37, 54);
             ClientSize = new Size(800, 450);
+            Controls.Add(label2);
             Controls.Add(panel1);
             Name = "LoginForm";
             Text = "LoginForm";
@@ -118,6 +131,7 @@
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -129,5 +143,6 @@
         private Label label3;
         private Label txtUsername;
         private Button btnLogin;
+        private Label label2;
     }
 }
