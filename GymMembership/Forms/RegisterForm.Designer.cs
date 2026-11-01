@@ -297,6 +297,7 @@ namespace GymMembership.Forms
             btnClear.TabIndex = 8;
             btnClear.Text = "Clear Fields";
             btnClear.UseVisualStyleBackColor = false;
+            btnClear.Click += btnClear_Click;
             // 
             // btnRegister
             // 
@@ -313,6 +314,7 @@ namespace GymMembership.Forms
             btnRegister.TabIndex = 7;
             btnRegister.Text = "✓ Register / Activate Member";
             btnRegister.UseVisualStyleBackColor = false;
+            btnRegister.Click += btnRegister_Click;
             // 
             // panelFeeSummary
             // 
@@ -520,6 +522,7 @@ namespace GymMembership.Forms
             cmbCategory.Name = "cmbCategory";
             cmbCategory.Size = new Size(370, 25);
             cmbCategory.TabIndex = 2;
+            cmbCategory.SelectedIndexChanged += cmbCategory_SelectedIndexChanged;
             // 
             // lblSelectCategory
             // 
@@ -555,6 +558,7 @@ namespace GymMembership.Forms
             FormBorderStyle = FormBorderStyle.None;
             Name = "RegisterForm";
             Text = "RegisterForm";
+            Load += RegisterForm_Load;
             panelHeader.ResumeLayout(false);
             panelHeader.PerformLayout();
             cardMemberDetails.ResumeLayout(false);
