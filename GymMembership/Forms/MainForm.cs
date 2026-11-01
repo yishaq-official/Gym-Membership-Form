@@ -81,7 +81,7 @@ namespace GymMembership.Forms
             {
                 _isLoggingOut = true;
 
-                LoginForm loginForm = Application.OpenForms.OfType<LoginForm>().FirstOrDefault();
+                LoginForm? loginForm = Application.OpenForms.OfType<LoginForm>().FirstOrDefault();
                 if (loginForm != null)
                 {
                     loginForm.ResetForm();
