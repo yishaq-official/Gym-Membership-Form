@@ -475,6 +475,7 @@ namespace GymMembership.Forms
             btnQuickMembers.Text = "👥  View Members List";
             btnQuickMembers.TextAlign = ContentAlignment.MiddleLeft;
             btnQuickMembers.UseVisualStyleBackColor = false;
+            btnQuickMembers.Click += btnQuickMembers_Click;
             // 
             // btnQuickRenew
             // 
@@ -492,6 +493,7 @@ namespace GymMembership.Forms
             btnQuickRenew.Text = "💳  Renew Membership";
             btnQuickRenew.TextAlign = ContentAlignment.MiddleLeft;
             btnQuickRenew.UseVisualStyleBackColor = false;
+            btnQuickRenew.Click += btnQuickRenew_Click;
             // 
             // btnQuickRegister
             // 

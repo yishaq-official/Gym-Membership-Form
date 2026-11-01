@@ -17,7 +17,7 @@ namespace GymMembership.Forms
             LoadForm(new DashboardForm());
         }
 
-        private void LoadForm(Form childForm)
+        public void LoadForm(Form childForm)
         {
             if (this.panelContent.Controls.Count > 0)
             {
