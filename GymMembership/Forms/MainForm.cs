@@ -13,10 +13,12 @@ namespace GymMembership.Forms
         public MainForm()
         {
             InitializeComponent();
+            // Load DashboardForm as default view on startup
+            LoadForm(new DashboardForm());
         }
+
         private void LoadForm(Form childForm)
         {
-
             if (this.panelContent.Controls.Count > 0)
             {
                 this.panelContent.Controls[0].Dispose();
@@ -49,9 +51,10 @@ namespace GymMembership.Forms
             ProfileForm profileForm = new ProfileForm();
             LoadForm(profileForm);
         }
+
         private void btnRegistration_Click(object sender, EventArgs e)
         {
-            // Loads ProfileForm
+            // Loads RegisterForm
             RegisterForm RegisterForm = new RegisterForm();
             LoadForm(RegisterForm);
         }
