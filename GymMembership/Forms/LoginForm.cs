@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,6 +14,13 @@ namespace GymMembership
         public LoginForm()
         {
             InitializeComponent();
+        }
+
+        public void ResetForm()
+        {
+            txtPassword.Clear();
+            txtUser.Clear();
+            txtUser.Focus();
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -40,7 +47,7 @@ namespace GymMembership
 
                 // Clear the password field and focus back on username for convenience
                 txtPassword.Clear();
-                txtUsername.Focus();
+                txtUser.Focus();
             }
         }
 

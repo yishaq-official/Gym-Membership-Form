@@ -159,6 +159,7 @@ namespace GymMembership.Forms
             btnLogout.Text = "🚪   Log Out";
             btnLogout.TextAlign = ContentAlignment.MiddleLeft;
             btnLogout.UseVisualStyleBackColor = true;
+            btnLogout.Click += btnLogout_Click;
             // 
             // btnProfile
             // 
@@ -255,6 +256,7 @@ namespace GymMembership.Forms
             Name = "MainForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Gym Membership Management System";
+            FormClosed += MainForm_FormClosed;
             panelHeader.ResumeLayout(false);
             panelHeader.PerformLayout();
             panelFooter.ResumeLayout(false);

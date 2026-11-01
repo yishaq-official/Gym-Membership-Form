@@ -3,13 +3,17 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using GymMembership;
 
 namespace GymMembership.Forms
 {
     public partial class MainForm : Form
     {
+        private bool _isLoggingOut = false;
+
         public MainForm()
         {
             InitializeComponent();
@@ -63,6 +67,42 @@ namespace GymMembership.Forms
         {
             MembershipForm MemberForm = new MembershipForm();
             LoadForm(MemberForm);
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(
+                "Are you sure you want to log out?",
+                "Confirm Logout",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                _isLoggingOut = true;
+
+                LoginForm loginForm = Application.OpenForms.OfType<LoginForm>().FirstOrDefault();
+                if (loginForm != null)
+                {
+                    loginForm.ResetForm();
+                    loginForm.Show();
+                }
+                else
+                {
+                    LoginForm newLogin = new LoginForm();
+                    newLogin.Show();
+                }
+
+                this.Close();
+            }
+        }
+
+        private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (!_isLoggingOut)
+            {
+                Application.Exit();
+            }
         }
     }
 }
