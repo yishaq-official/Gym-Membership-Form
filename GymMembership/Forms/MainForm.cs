@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -35,6 +35,12 @@ namespace GymMembership.Forms
         {
             DashboardForm dashForm = new DashboardForm();
             LoadForm(dashForm);
+        }
+
+        private void btnMembers_Click(object sender, EventArgs e)
+        {
+            MembershipForm membersForm = new MembershipForm();
+            LoadForm(membersForm);
         }
 
         private void btnProfile_Click(object sender, EventArgs e)
