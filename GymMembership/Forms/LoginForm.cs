@@ -30,22 +30,22 @@ namespace GymMembership
 
             if (username == "admin" && password == "admin123")
             {
-                // Optional: Show a quick welcome message
+                
                 MessageBox.Show("Login Successful!", "Welcome", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                // Open the Main form
+                
                 MainForm mainWindow = new MainForm();
                 mainWindow.Show();
 
-                // Hide the Login form (using Hide instead of Close keeps the application running)
+               
                 this.Hide();
             }
             else
             {
-                // Show an error message if credentials don't match
+                
                 MessageBox.Show("Invalid Username or Password. Please try again.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-                // Clear the password field and focus back on username for convenience
+                
                 txtPassword.Clear();
                 txtUser.Focus();
             }

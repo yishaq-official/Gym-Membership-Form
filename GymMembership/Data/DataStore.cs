@@ -4,9 +4,9 @@ using System.Linq;
 
 namespace GymMembership.Data
 {
-    /// <summary>
-    /// Central in-memory data store for gym members, statistics, and renewal operations.
-    /// </summary>
+
+    // Central in-memory data store for gym members, statistics, and renewal operations.
+
     public static class DataStore
     {
         private static readonly List<Member> _members = new();
@@ -17,9 +17,11 @@ namespace GymMembership.Data
             SeedDemoData();
         }
 
-        /// <summary>
-        /// Seeds initial realistic Ethiopian gym demo records.
-        /// </summary>
+        // Seeds initial realistic Ethiopian gym demo records.
+        //A local data store to use mmock data for both members and register from one central local data store. but it is for one run only.
+        // after one run, the registered data will be erased(except the hardcoded mock data)
+        //admin credientals are also mock
+
         private static void SeedDemoData()
         {
             _members.Clear();
@@ -97,25 +99,25 @@ namespace GymMembership.Data
             });
         }
 
-        /// <summary>
-        /// Returns all members (newest first).
-        /// </summary>
+
+        // Returns all members (newest first).
+
         public static List<Member> GetAll()
         {
             return _members.OrderByDescending(m => m.RegistrationDate).ToList();
         }
 
-        /// <summary>
-        /// Finds a member by their ID.
-        /// </summary>
+
+        // Finds a member by their ID.
+
         public static Member? FindById(string id)
         {
             return _members.FirstOrDefault(m => string.Equals(m.Id, id, StringComparison.OrdinalIgnoreCase));
         }
 
-        /// <summary>
-        /// Returns the standard monthly price in ETB for a given category.
-        /// </summary>
+
+        // Returns the standard monthly price in ETB for a given category.
+
         public static decimal GetFeeByCategory(string category)
         {
             if (string.IsNullOrWhiteSpace(category)) return 500m;
@@ -127,9 +129,9 @@ namespace GymMembership.Data
             return 500m;
         }
 
-        /// <summary>
-        /// Adds a new member to the central store. Auto-assigns ID and Fee if missing.
-        /// </summary>
+
+        // Adds a new member to the central store. Auto-assigns ID and Fee if missing.
+
         public static Member AddMember(Member member)
         {
             if (string.IsNullOrWhiteSpace(member.Id))
@@ -151,9 +153,9 @@ namespace GymMembership.Data
             return member;
         }
 
-        /// <summary>
-        /// Renews a member's subscription. Extends expiration date by the specified months from today or current expiry.
-        /// </summary>
+
+        // Renews a member's subscription. Extends expiration date by the specified months from today or current expiry.
+
         public static bool RenewMember(string id, int months = 1)
         {
             var member = FindById(id);
@@ -167,9 +169,9 @@ namespace GymMembership.Data
             return true;
         }
 
-        /// <summary>
-        /// Deletes a member from the store.
-        /// </summary>
+
+        // Deletes a member from the store.
+
         public static bool DeleteMember(string id)
         {
             var member = FindById(id);
